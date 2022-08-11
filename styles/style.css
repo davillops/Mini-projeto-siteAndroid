@@ -123,6 +123,19 @@ main a:hover{
     color: var(--cor3);
     transition-duration: .2s;
 }
+div.video{
+    background-color: #315e3e;
+    margin: 0px -10px 30px -10px ;
+    position: relative;
+    padding-bottom: 58%;
+}
+div iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
 .imgpeq{
     max-width: 350px;
     display: block;
