@@ -29,6 +29,9 @@ body{
     background-color: #C5E6CE;
     font-family: var(--fonte-padrao);
 }
+a.externo::after{
+    content: '\00A0\1F517';
+}
 /*---HEADER---*/
 header{
     font-family: var(--fonte-destaque);
@@ -98,11 +101,6 @@ main h2{
     font-family: var(--fonte-android);
     padding-left: 3px;
 }
-main h3{
-    background-image:linear-gradient(to right, var(--cor1), transparent);
-    border-radius: 7px 0px 0px 7px;
-    padding-left: 3px;
-}
 #pirina{
     padding-top: 5px;
 }
@@ -130,11 +128,44 @@ main a:hover{
 
 strong{
     padding-left: 3px;
-
+}
+aside{
+    box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--cor0);
+}
+aside h3{
+    color: white;
+    background-color: var(--cor3);
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 8px;
+}
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    padding: 20px;
+    list-style-position: inside;
+    columns: 2;
 }
 footer{
     background-color: var(--cor4);
     color: white;
     margin-top: 10px;
-    padding-left: 15px;
+    padding: 5px;
+}
+footer p{
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+footer a{
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 4px 0px 4px;
+    color: var(--cor3);
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
 }
